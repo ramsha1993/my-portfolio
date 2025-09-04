@@ -1,14 +1,12 @@
 @import "tailwindcss";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 h1{
-    font-family: "Roboto", sans-serif;
-
+  font-family: var(--font-poppins), sans-serif;
 }
 .panel {
   z-index: 1;
@@ -18,3 +16,7 @@ h1{
 }
 .panel:nth-child(2) { z-index: 2; }
 .panel:nth-child(3) { z-index: 3; }
+.heading{
+
+
+}

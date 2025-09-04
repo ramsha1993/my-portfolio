@@ -53,7 +53,7 @@ const Section1 = ({ text, backgroundImage, mobileBackgroundImage, className, des
             exit="exit"
           >
             <h1
-              className={`reveal-on-scroll text-white text-5xl md:text-6xl ${
+              className={`reveal-on-scroll text-white text-5xl md:text-6xl heading ${
                 className && className.includes('thank-you-heading') ? '!text-left' : 'text-center'
               }`}
             >

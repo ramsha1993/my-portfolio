@@ -6,7 +6,8 @@ import Places from '@/components/home/places/place'
 import Section4 from '../common/Section4'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import burj from '../../public/assets/burj.jpg'
-
+import Footer from '@/layout/footer';
+import places from '@/components/home/places/place';
 import { useEffect } from 'react'
 import gsap from 'gsap'
 const index=()=>{
@@ -81,19 +82,19 @@ const index=()=>{
 
       >
        
-<Home backgroundImage={'/assets/burj.jpg'} text={<>Unlock the Door to  <br/>Your Dream Home</>} />
+<Home backgroundImage={'/assets/burj.jpg'} text={<>Future-Proof Living — Today’s <br/> Comfort, Tomorrow’s Value </>} />
 
 
-<Section4    text={<>ELEVATED LIVING,<br />WITHIN REACH</>}
-            desktopBackground='/assets/burj.jpg'
-            className="panel absolute  inset-0 md:block hidden  w-full  h-[100vh] bg-center " />
-            <Section4    text={<>ELEVATED LIVING,<br />WITHIN REACH</>}
-        desktopBackground='/assets/burj.jpg'
-            className="panel absolute inset-0 md:block hidden w-full h-[100vh]  bg-center  " />
-            <Section4    text={<>ELEVATED LIVING,<br />WITHIN REACH</>}
-            desktopBackground='/assets/burj.jpg'
-            className="panel absolute  inset-0 md:block hidden w-full h-[100vh]   bg-center" />
+<Section4    text={<>ELEVATED LIVING,<br />WITHIN REACH</>} heading={<>Discover Your Dream <br/> Home Today</>}
+            desktopBackground='/assets/2.jpg' overlay={true} btntext={'Explore'}
+            className="panel absolute  inset-0 md:block hidden  w-full  h-[100vh] bg-cover " />
+            <Section4   heading={<>Where Modern Comfort<br/> Meets Timeless Elegance</>}
+        desktopBackground='/assets/burj.jpg' overlay={true}
+            className="panel absolute inset-0 md:block hidden w-full h-[100vh]  bg-center  "  btntext={'Explore'}/>
+
 </div>
+<Places  center_position={[25.0631, 55.2471]}  markers={markers}/>
+<Footer />
 </div>
     )
 }

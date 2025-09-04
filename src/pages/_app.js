@@ -1,5 +1,5 @@
 // pages/_app.js
-import "@/styles/globals.css";
+import '../styles/globals.css'
 import { Roboto } from "next/font/google"; // ✅ correct import
 
 const roboto = Roboto({

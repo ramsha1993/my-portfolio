@@ -112,7 +112,7 @@ const Header = () => {
                 className="w-36 object-contain"
               /> */}
 
-              <h2 className='text-white text-2xl font-medium'>Real Estate</h2>
+              <h2 className='text-white text-2xl font-medium'>DreamSquare</h2>
             </Link>
           </motion.div>
 

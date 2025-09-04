@@ -1,7 +1,7 @@
 
 import React, {  useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
-import car from '../../../../public/assets/car.png'
+import car from '../../../../public/assets/car3.png'
 
 
 
@@ -85,7 +85,7 @@ const carWrapperRef=useRef(null)
 
 
  return(
- <div className='  w-full md:pt-24 pt-20 overflow-hidden bg-black  text-white h-[100vh] mb-40'  ref={sectionref}>
+ <div className='  w-full md:pt-24 pt-20  overflow-hidden bg-black  text-white h-[100vh]'  ref={sectionref}>
       <div className='flex flex-col items-center justify-center gap-[100px]  w-full lg:mt-[20px] mt-[50px] ' >
         <div className='flex flex-col items-center justify-center w-full ' >
 
