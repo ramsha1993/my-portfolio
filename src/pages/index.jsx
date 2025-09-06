@@ -9,6 +9,7 @@ import burj from '../../public/assets/burj.jpg'
 import Footer from '@/layout/footer';
 import places from '@/components/home/places/place';
 import { useEffect } from 'react'
+import Animated from '@/components/animatedhero.jsx/animated';
 import gsap from 'gsap'
 const index=()=>{
       //  useEffect(() => {
@@ -66,9 +67,9 @@ const index=()=>{
    }, []);
 
       const markers = [
-      { name: 'Mall of the Emirates', coordinates: [25.118009, 55.200367], icon: '/assets/105/Vector.svg' },
-      { name: 'Dubai Marina	', coordinates: [25.080562, 55.140911], icon: '/assets/105/Vector2.svg' },
-      { name: 'Down Town', coordinates: [25.1951, 55.2744], icon: '/assets/105/Vector4.svg' },
+      { name: 'Souq Waqif', coordinates: [25.2854, 51.5331]  },
+      { name: 'Museum of Islamic Art	', coordinates: [25.295479, 51.539124], },
+      { name: 'National Museum of Qatar', coordinates: [25.28715,51.54829],  },
 
 
    ];
@@ -76,24 +77,28 @@ const index=()=>{
     <div className='overflow-hidden'>
 
 <Header />
+         <Animated/>
+
  <div
         className="hero relative "
 
 
       >
        
-<Home backgroundImage={'/assets/burj.jpg'} text={<>Future-Proof Living — Today’s <br/> Comfort, Tomorrow’s Value </>} />
+<Home backgroundImage={'/assets/estate.jpg'} text={<>Future-Proof Living — Today’s <br/> Comfort, Tomorrow’s Value </>} />
 
 
 <Section4    text={<>ELEVATED LIVING,<br />WITHIN REACH</>} heading={<>Discover Your Dream <br/> Home Today</>}
-            desktopBackground='/assets/2.jpg' overlay={true} btntext={'Explore'}
-            className="panel absolute  inset-0 md:block hidden  w-full  h-[100vh] bg-cover " />
-            <Section4   heading={<>Where Modern Comfort<br/> Meets Timeless Elegance</>}
-        desktopBackground='/assets/burj.jpg' overlay={true}
-            className="panel absolute inset-0 md:block hidden w-full h-[100vh]  bg-center  "  btntext={'Explore'}/>
+            desktopBackground='/assets/appr.jpg' btntext={'Explore'}
+            className="panel absolute  inset-0 md:block hidden font-roboto w-full  h-[100vh] bg-cover " />
+            <Section4   heading={<>Unlock the Door to <br />Your Dream Home</>}
+        desktopBackground='/assets/door.jpg' 
+            className="panel absolute inset-0 md:block hidden w-full h-[100vh]  bg-cover  bg-[top center] "  btntext={'Explore'} />
 
 </div>
-<Places  center_position={[25.0631, 55.2471]}  markers={markers}/>
+<div className='h-auto w-full bg-white '>
+   <div className='flex items-center justify-center mt-10'><h1 className='text-5xl font-light '>Explore Our Global Presence</h1></div>
+<Places  center_position={[25.2854, 51.5331] }  markers={markers}/></div>
 <Footer />
 </div>
     )

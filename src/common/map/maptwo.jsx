@@ -101,8 +101,7 @@ const bounds = L.latLngBounds(markers.coordinates);
         className: '',
         html: `
           <div style="display: flex; align-items: center; gap: 6px;">
-            <img src="/assets/105/105.png" width="2" height="2" />
-            <span style="font-size: 14px;color:#CCAB64; background: white; padding: 2px 6px; border-radius: 4px;">${Main_marker}</span>
+            <span style="font-size: 14px;color:#CCAB64; background: white; padding: 2px 6px; border-radius: 4px;">Souq Waqif</span>
           </div>
         `,
       })}>
@@ -115,7 +114,6 @@ const bounds = L.latLngBounds(markers.coordinates);
           className: '',
           html: `
             <div style="display: flex; align-items: center; gap: 6px;">
-            <img src="${marker.icon}" width="5" height="5"  style="height:36px; width:36px"/>
             <span style="font-size: 14px;color:#CCAB64; background: white; padding: 2px 6px; border-radius: 4px;">${marker.name}</span>
             </div>
           `,
