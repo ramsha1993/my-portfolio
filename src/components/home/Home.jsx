@@ -97,7 +97,7 @@ const Home = () => {
           <Hero/>
           
           <Section2
-            text={<>ELEVATED LIVING,<br />WITHIN REACH</>}
+            text={<>Elevated Living,<br />With in Reach</>}
             backgroundImage="/assets/2.png"
             className="panel md:block hidden inset-0 absolute w-full h-[100vh] z-10"
           />

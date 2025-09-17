@@ -33,7 +33,8 @@ useEffect(() => {
          scrollTrigger: {
   trigger: sectionref.current,
   start: 'top top',
-  end: '+=1500',
+  end: '+=3500',
+  markers:true,
   scrub: true,
   onUpdate: (self) => {
           if (!movingRef.current) return;
@@ -85,7 +86,7 @@ const carWrapperRef=useRef(null)
 
 
  return(
- <div className='  w-full md:pt-24 pt-20  overflow-hidden bg-white text-black h-[100vh]'  ref={sectionref}>
+ <div className='  w-full md:pt-24 pt-20   overflow-hidden  text-black h-[200vh]'  ref={sectionref}>
       <div className='flex flex-col items-center justify-center gap-[100px]  w-full lg:mt-[20px] mt-[50px] ' >
         <div className='flex flex-col items-center justify-center w-full ' >
 

@@ -6,9 +6,9 @@ import Link from 'next/link';
 const Section4 = ({ heading, text, btntext, p, text1, desktopBackground, mobileBackground, overlay, titleNumber, className, isProject1 = false }) => {
   return (
     <section
-      className={` w-full h-screen ${className}`}
+      className={` w-full  h-screen ${className}`}
       style={{
-        backgroundImage: `url(${desktopBackground})`
+        backgroundImage: `url(${desktopBackground})`,
       }}
     >
       {/* Dark Overlay */}
@@ -28,9 +28,9 @@ const Section4 = ({ heading, text, btntext, p, text1, desktopBackground, mobileB
               letterSpacing: '0.01px',
               textShadow: '0 2px 16px rgba(0,0,0,0.18)',
             }}
-            className="reveal-on-scroll text-white text-3xl md:text-5xl pt-10 font-light uppercase mb-6"
-            style={{lineHeight: 0.5, }}>
-            <span className="text-7xl  font-medium">{titleNumber}</span>{heading}
+            className="reveal-on-scroll text-white text-3xl md:text-5xl pt-10 font-light mb-6"
+            >
+            <span className="text-7xl  font-medium">{titleNumber}</span><span className='font-bold text-[80px]'>{heading}</span>
           </motion.h1>
 
           {p &&

@@ -1,12 +1,20 @@
 @import "tailwindcss";
-
+@font-face {
+  font-family: 'Host Grotesk'; /* Choose a descriptive name */
+  src: url('/fonts/Host_Grotesk-normal-400-latin.wBCQJesg.woff2') format('woff2');
+  font-weight: 400; /* As indicated by the filename '400' */
+  font-style: normal; /* As indicated by the filename 'normal' */
+  font-display: swap; /* Best practice for performance */
+}
 
 body {
-   font-family: "Roboto";
+  font-family: 'Host Grotesk';
+   background-color: #181717;
+   scroll-behavior: smooth
 
 }
 h1,h2,h3{
-     font-family: "Arimo";
+  font-family:'Host Grotesk';
 
 }
 .montserrat-uniquifier {
@@ -138,7 +146,19 @@ h1{
 .panel:nth-child(2) { z-index: 2; }
 .panel:nth-child(3) { z-index: 3; }
 
-
+.menu {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+.child-1,
+.child-2,
+.child-3,
+.child-4 {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+;}
 
 .roboto-uniquifier{
   font-family: "Roboto", sans-serif;
@@ -153,4 +173,43 @@ h1{
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+
+.host-grotesk-uniquifier {
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.urbanist-uniquifier {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+.marquee {
+  display: flex;
+  
+
+}
+
+ .marquee,.marquee-right{
+  /* Common animation properties */
+  animation: scroll 5s linear infinite; /* Use the same animation */
+ }
+
+/* Optional: Add a pause on hover */
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
 }

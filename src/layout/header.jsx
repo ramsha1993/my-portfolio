@@ -66,7 +66,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="md:container relative lg:absolute lg:-bottom-10 left-0 right-0 mx-auto md:px-4 py-3 flex justify-between xl:justify-center items-center w-full lg:w-[80%] xl:w-[70%]  bg-[#A81F19] md:bg-transparent">
+      <div className="md:container relative lg:absolute lg:-bottom-10 left-0 right-0 mx-auto md:px-4 py-3 flex justify-between xl:justify-center items-center w-full lg:w-[50%]  bg-[#A81F19] md:bg-transparent">
         {/* Logo - White background only on desktop */}
         <div className="flex-shrink-0 lg:bg-white md:rounded-l-full py-1 px-4 md:px-2">
           <Link href="/"> 
