@@ -7,7 +7,7 @@ const animate=()=>{
     useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.normalizeScroll(true);
-gsap.set('.hero-3',{yPercent:100})
+gsap.set('.hero-3,.hero-4,hero-sub',{yPercent:130,scale:1.2})
 const tl=gsap.timeline({
     scrollTrigger:{
         trigger:'.hero-1',
@@ -18,27 +18,38 @@ const tl=gsap.timeline({
     }
 })
 tl.to('.hero-2',{
-  duration:4
+delay:4
 })
 tl.to('.hero-2',{
-    scale:1,borderRadius:40,duration:2
-},'<')
+    scale:1,borderRadius:60,duration:4,ease:'power1.in'
+})
 tl.to('.reveal-container',{
   clipPath: 'inset(0% 0% 0% 0%)', // This reveals the text fully
-  duration: 1,
+  duration:3,
   ease: 'power2.out'
 })
 
 tl.to('.hero-3',{
-  yPercent: 0,borderRadius:40,duration:2
-})
-tl.to('.hero-2',{scale:0.9,duration:1},"<")
-tl.to('.reveal-container-2',{
-  clipPath: 'inset(0% 0% 0% 0%)', // This reveals the text fully
-  duration: 1,
-  ease: 'power2.out'
+  yPercent: 0,scale:1,borderRadius:60,duration:4,ease:"expoScale(0.5,7,none)",
 })
 
+tl.to('.hero-2',{scale:0.9,duration:1},"<")
+
+tl.to('.reveal-container-2',{
+  clipPath: 'inset(0% 0% 0% 0%)', // This reveals the text fully
+  duration: 3,
+  ease: 'power2.out'
+})
+tl.to('.hero-4',{
+  yPercent: 0,scale:1,borderRadius:60,duration:4,ease:"expoScale(0.5,7,none)"
+
+})
+tl.to('.hero-3',{scale:0.9,duration:2},"<")
+tl.to('.reveal-container-3',{
+  clipPath: 'inset(0% 0% 0% 0%)', // This reveals the text fully
+  duration: 4,
+  ease: 'power1.out'
+})
 
 },[])
     return(

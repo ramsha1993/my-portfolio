@@ -5,7 +5,7 @@ import Header from '../layout/header'
 import Places from '@/components/home/places/place'
 import Section4 from '../common/Section4'
 import Footer from '@/layout/footer';
-
+import Animated4 from '@/components/animated4/animated4';
 
 import Animated from '@/components/animatedhero.jsx/animated';
 
@@ -40,6 +40,7 @@ const index=()=>{
 <Header />
          <Animated/>
 
+
  <div
         className="hero relative w-full h-[120vh] mb-20"
 
@@ -49,6 +50,8 @@ const index=()=>{
 <Home backgroundImage={'/assets/estate.jpg'} text={<>Future-Proof Living — Today’s <br/> Comfort, Tomorrow’s Value </>}  className={'rounded-[30px]  panel absolute inset-0 scale-[0.6]'} />
 
 </div>
+
+<Animated4 />
 
 <Animated2 />
 

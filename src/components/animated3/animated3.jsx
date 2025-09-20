@@ -20,7 +20,15 @@ const animated3=({})=>{
 </div>
 {/* <Image src={'/assets/2.webp'} fill className="object-cover hero-sub" style={{borderRadius:'145px'}}/> */}
     </div>
+    <div className={`absolute inset-0 h-[100vh]  transform transition 1s ease-out mx-auto flex items-center  hero-4  w-[98%]   `} style={{borderRadius:'145px',backgroundImage:'url(/assets/img3.webp)',backgroundPosition:'center',backgroundSize:'cover'}}>
+<div class="reveal-container-3 " style={{    clipPath: 'inset(0% 0% 0% 100%)'
+}}>
+  <p class="text-to-reveal px-2 text-[90px] w-full text-left text-white"> Classic Capsules</p>
+</div>
+{/* <Image src={'/assets/2.webp'} fill className="object-cover hero-sub" style={{borderRadius:'145px'}}/> */}
+    </div>
     </>
 )
 }
 export default animated3
+
